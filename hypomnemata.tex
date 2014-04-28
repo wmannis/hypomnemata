@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont{Linux Libertine O}
+\setromanfont{Brill}
+%\newfontfamily\greek{Gentium}
+
+
+\usepackage{multicol}
+\usepackage{ulem}
+\usepackage{ifthen}
+% Interdocument linking.
+\usepackage[xetex]{hyperref}
+\hypersetup{bookmarksopen=false,
+  pdfpagemode=UseNone,
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=black,    % no links for footnotes; URLs will still have color
+  pdftitle={Glossopoetic Hypmnemata},
+  pdfauthor={William S. Annis},
+  pdfkeywords={conlang}%,
+}
+
+
+% Better sectioning for this document.
+\usepackage[compact,rigidchapters,explicit]{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\section}[display]
+ {\normalfont\fillast}
+ {\normalfont\bfseries \thesection. #1}
+ {1ex minus .1ex}
+ {\small}
+\titlespacing{\section}{3pc}{*4}{-1em}[3pc]
+
+\titleformat{\subsection}[runin]{\normalfont\bfseries}{\thesubsection.}{.5em}{#1. }[ { }]
+\titlespacing{\subsection}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries\small}{\thesubsubsection.}{.5em}{#1. }[ { }]
+\titlespacing{\subsubsection}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+% If no argument is given, only the section is printed, no title.
+\titleformat{\paragraph}[runin]{\normalfont\bfseries\small}{\theparagraph.}{.5em}{\ifthenelse{\equal{#1}{}}{}{#1. }}[ { }]
+\titlespacing{\paragraph}{1ex}{1.5ex plus .1ex minus .2ex}{0pt}
+
+% Some utilities.
+\newcommand{\LL}[1]{\textbf{#1}}  % Other language
+\newcommand{\E}[1]{\textit{#1}}   % English
+\newcommand{\I}[1]{\textsc{#1}}   % Interlinears
+\newcommand{\note}[1]{\textcolor{magenta}{\small\textit{#1}}}
+\newcommand{\tsref}[1]{\hyperref[#1]{\S \textbf{\ref*{#1}}}}
+\newcommand{\interlin}[1]{\begin{quotation}{\small\noindent#1}\end{quotation}}
+\newenvironment{grammarlist}%
+ {\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}\ignorespaces}%
+ {\end{itemize}\ignorespacesafterend}
+
+\newenvironment{dlist}%
+ {\begin{quote}\begin{description}\addtolength{\itemsep}{-0.3\baselineskip}\ignorespaces}%
+ {\end{description}\ignorespacesafterend\end{quote}}
+
+\newenvironment{examples}{\quote}{\endquote}
+\newcommand{\example}[2]{\noindent\LL{#1}\hskip1em\E{#2}}
+\newcommand{\longexample}[2]{\noindent\LL{#1}
+\indent\E{#2}}
+
+\begin{document}
+\frenchspacing
+\title{Glossopoetic Hypomnemata}
+\author{Wm S. Annis}
+\date{\today}
+\maketitle
+
+\section{Phonology and Phonemes}
+
+Illegal clusters may occur in particular grammatical contexts, and
+thus look common (\textit{cf.} Latin \LL{-nt} in \I{3pl} verb
+endings).
+
+
+\section{The Noun}
+
+Nouns are the most frequently borrowed word class.
+
+
+\section{The Pronoun}
+
+Languages with 1/2 systems are not common, but not rare either.
+
+Sg/du/paucal/pl is far more common that sg/du/trial/pl.
+
+It's not especially common for sg and pl forms to be related (as in
+Chinese).
+
+Many languages:
+
+\begin{center}
+\begin{tabular}{lll}
+  & Singular & Plural \\
+\I{1st} & 1 & 12, 13 (and 11) \\
+\I{2nd} & 2 & 22, 23 \\
+\I{3rd} & 3 & 33
+\end{tabular}
+\end{center}
+
+However, one might get something like:
+
+\begin{center}
+\begin{tabular}{ll}
+1 & 13 (and 11) \\
+2 & 12, 22, 23     
+\end{tabular}
+\end{center}
+
+The basic 1/2/3 sg/pl system may be extended to include a special 12
+``me and you'' form.  This may involve the innovation of a dual
+throughout the pronoun system.  Or it may be just a normal system with
+an inclusive/exclusive distinction.  Or a minimal/augmented system, 
+
+\begin{center}
+\begin{tabular}{ll}
+Minimal & Non-minimal \\
+1  & 1 + others \\
+1+2 & 1+2 + others \\
+2 & 2 + others \\
+3 & 3 + others 
+\end{tabular}
+\end{center}
+
+\noindent The non-minimal may include ``unit augmented'' (one other
+person, producing a dual in many forms) and just ``augmented'' (the
+``plural'').  Minimal/augmented are common in Australia, Austronesian,
+South America, and a few in North America, though the unit
+augmented/augmented distinction is nearly restricted to Australia.
+
+3sg = 3pl is a common neutralization.  2pl = 3pl (and 2du = 3du) can
+happen.
+
+Using 2du, 2paucal or 2pl as a mark of respect occurs in Europe,
+Oceania, Australia.
+
+There is a relationship between the indefinite ``someone'' and
+1non-sg forms (French; Caddo, etc).  Usually it's 1pl.inc that does
+this. 
+
+
+\section{The Adjective}
+
+
+\section{The Verb}
+
+``Labile transitivity'' is very common.  Be clear on \I{s = a}
+\textit{vs.} \I{s = o} for intransitive constructions.  Some languages
+may skew in favor of one or the other, but others do not.  English
+``cook,'' with transitive and both intransitives (``the chef cooks;
+the chef cooks stew; the stew is cooking'') is unusual.
+
+A transitive verb may be used intransitively in an extended
+intransitive sense, too.
+
+Among other categories, some languages have verbs that mark ease or
+difficulty.  The marking for ``ease'' on a transitive verb may signal
+a small \I{o}.
+
+\subsection{Semantic Types and Their Frames}
+
+\begin{center}
+\begin{tabular}{lllll}
+\I{affect} (\E{hit, cut}) & Agent & Target & Instrument \\
+\I{giving} (\E{give, lend}) & Donor & Gift & Recipient \\
+\I{speaking} (\E{speak, tell}) & Speaker & Addressee & Message & Medium \\
+\I{thinking} (\E{consider}) & Cogitator & Thought \\
+\I{attention} (\E{see, hear}) & Perceiver & Impression \\
+\I{liking} (\E{like, love, hate}) & Experiencer & Stimulus
+\end{tabular}
+\end{center}
+
+In some languages, an \E{affect} verb may require an inanimate agent,
+usually specific, such as food making a person sick, \textit{etc}.
+
+In very few languages are \I{liking} verbs like \I{annoying} verbs,
+where the experiencer and stimulus are in \I{o} and \I{a} roles.
+However, extended intransitives, with an oblique experiencer, are a
+bit more common.
+
+\I{attention} and \I{liking} may have extended intransitive frames.
+Or dative subjects.  Or oblique objects.
+
+The types with more than two arguments may have lexical or
+construction splits to determine which of the arguments is in the
+primary \I{o} slot (``tell'' vs. ``speak (French)'' vs. ``say'').
+
+For \I{give} there may be i) single verb with different constructions,
+ii) gift role is always in \I{o} function, iii) recipient role always
+in \I{o} function (rare; amusingly, with \I{dat} for the gift role).
+Or, ii and iii may have different lexical items.
+
+
+\section{Number}
+
+The distinction between ``paucal'' and ``plural'' is context
+dependent. 
+
+\section{Constructions}
+
+Any schematic construction may, like lexical constructions, be
+polysemous.  For example, the English ditransitive:
+
+\begin{grammarlist}
+  \item \I{X causes Y to receive Z} (central sense), ``Joe gave Sally
+    the ball.''
+  \item Conditions of satisfaction imply \I{X causes Y to receive Z},
+    ``Joe promised Bob a car.''
+  \item \I{X causes Y not to receive Z}, ``Joe refused Bob a cookie.''
+  \item \I{X acts to cause Y to receive Z} at some future time, ``Joe
+    bequeathed Bob a fortune.''
+  \item \I{X enables Y to receive Z}, ``Joe permitted Chris an
+    apple.''
+  \item \I{X intends to cause Y to receive Z}, ``Joe baked Bob a cake.''
+\end{grammarlist}
+
+Similarly, a particular language may have one construction for a
+particular job, such as a ditransitive construction, but others have
+several with different pragmatic or pivot significance (``I gave him
+the book'' \textit{vs.} ``I gave the book to him'').
+
+The non-ergative clauses in so-called split ergative systems are
+rarely nom-acc (\I{a = nom, p = acc, s = nom}).  Instead one can get
+\I{a = abs, p = abs, s = abs} (common), \I{a = abs, p = obl, s = abs}
+(common) or even \I{a = erg, p = abs, s = erg} (common in Mayan).  The
+aspect splits reflect (historically) intransitive \I{aux}
+constructions.  Thus, in rare circumstances, one may get splits in
+future clauses, or with negation, if they reflected an original
+\I{aux} construction.
+
+\end{document}
