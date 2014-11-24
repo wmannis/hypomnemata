@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{amssymb} % has to be used before XeTeX unicode trickery.
 \usepackage{fullpage}
 \usepackage{fontspec}
 \usepackage{xunicode}
@@ -246,6 +247,11 @@ There may just be a bunch of words for ``of'' which match class
 (possibly highly suppletive).
 
 \subsection{Verbal Classifiers} 
+Many originate from noun incorporation, possibly competing with it.
+However, some verbal classifiers may be clearly related to numeral or
+other classifiers in the language.  Another origin is from verbs, via
+grammaticalized serial verb constructions.
+
 Existential verbs may distinguish animate from inanimate; a few
 languages elaborate existentials quite a lot (in a container, movable
 vs.\ immobile, non-human animal, etc.).
@@ -573,15 +579,20 @@ In Kolyma Yukaghir there is a separate \I{acc} just for use on \I{1/2
 accusative.'' 
 
 Form dependency: each element's forms may depend on choices made in
-the feature above them (such as fewer tense forms in the negative for
+the feature above them (such as fewer tense forms in the negative, for
 example).  The final three are potentially interdependent, polarity
 $<$ tense, aspect, evidentiality $<$ person, reference classification
 (gender, etc.) $\Leftrightarrow$ number $\Leftrightarrow$ case.
 
-Hierarchy of diminutives and augmentatives: noun $>$ adj., verb $>$
-adv., numeral, pronoun, interjection $>$ determiner.  These markers
+Hierarchy of diminutives and augmentatives: noun $<$ adj., verb $<$
+adv., numeral, pronoun, interjection $<$ determiner.  These markers
 may be distributed over several words in a sentence.
 
-If a noun takes prefixing morphology, so will verbs.
+If the noun takes prefixing morphology, so will verbs.
+
+\section{Sound Changes}
+{\small
+\input changes
+}
 
 \end{document}
