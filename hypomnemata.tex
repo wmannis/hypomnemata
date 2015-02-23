@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage{amssymb} % has to be used before XeTeX unicode trickery.
 \usepackage{fullpage}
 \usepackage{fontspec}
@@ -87,13 +87,32 @@ you usually expect \I{n, r, s, nr, ns} and \I{rs} as coda sequences.
 Other orders are possible, but the above rule is common-ish.
 
 Hierarchy of clusters (\I{s} = sonorant, \I{o} = obstruent), word
-initial: \I{os} < \I{oo} < \I{ss} < \I{so}; word final: \I{so} < \I{oo}
-< \I{ss} < \I{os}.
+initial: \I{os} < \I{oo} < \I{ss} < \I{so}; word final: \I{so} <
+\I{oo} < \I{ss} < \I{os}.  Onset clusters tend to avoid identical
+places of articulation, which leads to avoidance of things like
+\textit{*tl, dl, bw,} etc., in a good number of languages. /j/ is
+lightly disfavored as \I{c2} after dentals, alveolars and palatals;
+/j/ and palatals are in general disfavored before front vowels.
+
+Languages with \textit{sC-} clusters often have syllabic codas.
+s+\I{stop} < s+\I{fric} / s+\I{nasal} < s+\I{lat} < s+\I{rhot} (the
+fricative and nasal are trickier to order).
 
 Lower vowels are preferred as syllabic nuclei; high vowels are more
 prone to syncope (either midword or finally).  Content words less
 likely to elide.
 % https://linguistics.stonybrook.edu/sites/default/files/uploads/u26/publications/QP1FinalDraft.pdf
+
+Sonority hierarchy:
+\begin{quotation}
+\noindent low vowels > mid vowels (except /ə/) > high vowels (except /ɨ/) > \\
+\indent /ə/ > /ɨ/ > glides > laterals > \\
+\indent flaps > trills > nasals > /h/ > \\
+\indent voiced fricatives > \\
+\indent voiced stops and affricates, voiceless fricatives > \\
+\indent voiceless fricatives, voiced stops and affricates > \\
+\indent voiceless stops and affricates
+\end{quotation}
 
 Metathesis (where P = /p, b, m/, etc.).  Obstruent + resonant can
 switch.  \I{pk} > \I{kp} occasionally, but not the other way.
@@ -101,7 +120,46 @@ switch.  \I{pk} > \I{kp} occasionally, but not the other way.
 
 Vowel devoicing starts with lowest sonority  (/i/, /u/).
 
+Hiatus resolution: 1) elide, contract, add glide /j/ or /w/; 2)
+intrude /h/ or /ʔ/; 3) intrude /t/ or /r/.
+
 Some suffixes may occur only in pausa, or are different there.
+
+\subsection{ATR Harmony}
+May apply to all vowels, or just to \I{-atr} /ɪ ʊ/.
+
+/a/ may be transparent, or may block.
+
+\subsection{Reduplication}
+The \textbf{inflectional} uses inculde: number (for nouns; for verbs
+marking actor number or event plurality; in noun compounds either or
+both elements may reduplicate, sometimes in free variation); very
+rarely to encode possession (either of 3rd person, or 1st and 2nd,
+usually with partial reduplication); frequent in verbs for
+frequentative, habitual or progressive aspect, but also imperfective,
+inchoative and perfect(ive).
+
+\I{red} may be used to repair a word shape that has taken some affix.
+
+The \textbf{derivational} uses include: ordinal numbers from cardinal;
+distribution (``3 each''); valency reduction in verbs, as well as
+reciprocals (and mutuality in other word classes, ``face to face'');
+associatives (``someone with X''); sort/kind of N; disposition,
+``someone prone to X, likely to X;'' common in indefinites (``who'' >
+``whoever''); in verbs, a lack of control.
+
+Noun to verb (``to wear an X''), adjective or adverb; verb to noun
+(agent noun, action noun, instrument), adjective or adverb; adjective
+to adverb.
+
+For adjectives and other vocabulary of quality: diminutive,
+attentuative, augmentative, intensification.
+
+The sense of ``collectivity'' might be used where we would expect a
+single term (``broom, flight of stairs,'' etc).
+
+Some affixes may simply require the root take \I{red}, with Makah
+having several types of \I{red} and affixes selecting one.
 
 
 \section{The Noun}
@@ -220,7 +278,7 @@ Noun classifier systems often related to number classifier systems,
 but they may be different.  Number classifiers are much less likely to
 be optional.  Both systems may occur in a single \I{np}.
 
-\subsection{Number Classifiers}
+\subsubsection{Number Classifiers}
 Sometimes there is a catch-all classifier, sometimes many nouns don't
 take any classifier.
 
@@ -238,7 +296,7 @@ Rarely, affixed and independent classifiers may appear together.
 A single noun may take different classifiers to focus salient
 characteristic.
 
-\subsection{Possessive Classifiers}
+\subsubsection{Possessive Classifiers}
 Can code: shape, consistence, animacy of possessum; relationship of
 possessor to possessum (as in Oceanic indirect possession); or, very
 rarely, class of possessor.
@@ -246,7 +304,7 @@ rarely, class of possessor.
 There may just be a bunch of words for ``of'' which match class
 (possibly highly suppletive).
 
-\subsection{Verbal Classifiers} 
+\subsubsection{Verbal Classifiers} 
 Many originate from noun incorporation, possibly competing with it.
 However, some verbal classifiers may be clearly related to numeral or
 other classifiers in the language.  Another origin is from verbs, via
@@ -255,6 +313,20 @@ grammaticalized serial verb constructions.
 Existential verbs may distinguish animate from inanimate; a few
 languages elaborate existentials quite a lot (in a container, movable
 vs.\ immobile, non-human animal, etc.).
+
+\subsection{Case}
+\subsubsection{Allative} A huge range of possibilities here.
+Occurring more often: true allative (``to, towards, reaching for''),
+purpose (``use it for that, in order to''), conceptual (``think about,
+occur to''), recipient (dative), timepoint (``at \I{time}''),
+addressee (``talk to me''), perceptual (``look at, listen to''),
+reason (``because of, ran from fear'').  Some less frequent
+possibilities include: temporal boundary (``by/until \I{time}''),
+benefactive, possessive, porportion or rate (``3 out of 4, 3 at a
+time''), equivalence (``as, in exchange for''), subordinator
+(``although, when, while''), emotional target (``hard for, be angry
+at'').
+% RiceKabata2007.pdf
 
 
 \section{The Pronoun}
@@ -336,6 +408,19 @@ may skew in favor of one or the other, but others do not.  English
 ``cook,'' with transitive and both intransitives (``the chef cooks;
 the chef cooks stew; the stew is cooking'') is unusual.
 
+Lability is a dodge!  If the language has rich mechanisms for changing
+transitivity, it's less frequent.
+
+Labile verbs tend to cluster semantically, 1) destruction and strong
+property change, ``break, boil, freeze, dry, go out, melt, dissolve,
+burn, destroy, break, split, kill/die;'' 2) motion and spatial
+configuration, ``rock, roll, sink, spread, close, open, connect,
+rise/raise, stop, fill, turn;'' 3) phase, ``begin, finish;'' 4)
+non-physical effect, ``change, improve, develop;'' and 5) verbs with
+an animate patient, ``wake up, learn, gather.''  A single language may
+pick several clusters, or only a few items from one.
+% Letuchiy, A., "Interpreting the spontaneity scale."
+
 A transitive verb may be used intransitively in an extended
 intransitive sense, too.
 
@@ -353,6 +438,7 @@ intransitive, some quite strongly transitive.
 Among other categories, some languages have verbs that mark ease or
 difficulty.  The marking for ``ease'' on a transitive verb may signal
 a small \I{o}.
+
 
 \subsection{Affix Order}
 The fewer person markers there are, the more likely they are to be
@@ -403,6 +489,8 @@ bit more common.
 
 \I{attention} and \I{liking} may have extended intransitive frames.
 Or dative subjects.  Or oblique objects.
+
+\I{want} verbs may have extended intransitive frames.
 
 The types with more than two arguments may have lexical or
 construction splits to determine which of the arguments is in the
@@ -570,6 +658,11 @@ Hunting, fishing or territorial languages: to conceal your intent from
 animals or spirits, or with tabu considerations; circumlocution and
 non-systematic deformation common practices for this.
 
+Body parts become special concepts in stages: 1) a region of the human
+body, 2) a region of an inanimate object, 3) a region in contact with
+an object and 4) a region detached from the object.  The landmark path
+(``extremity, peak'' $>$ ``head'') goes in reverse.
+% http://www.sciencedirect.com/science/article/pii/S0388000112000423
 
 
 \section{καὶ τὰ λοιπά}
@@ -589,6 +682,7 @@ adv., numeral, pronoun, interjection $<$ determiner.  These markers
 may be distributed over several words in a sentence.
 
 If the noun takes prefixing morphology, so will verbs.
+
 
 \section{Sound Changes}
 {\small
