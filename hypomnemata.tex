@@ -53,6 +53,7 @@
 \newcommand{\note}[1]{\textcolor{magenta}{\small\textit{#1}}}
 \newcommand{\tsref}[1]{\hyperref[#1]{\S \textbf{\ref*{#1}}}}
 \newcommand{\interlin}[1]{\begin{quotation}{\small\noindent#1}\end{quotation}}
+\newcommand{\rara}[1]{$\mathfrak{R}$: #1}
 \newenvironment{grammarlist}%
  {\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}\ignorespaces}%
  {\end{itemize}\ignorespacesafterend}
@@ -140,13 +141,33 @@ Many things can happen to a consonant following a nasal: NT > ND; NS,
 NZ > NTS, NDZ; NT > NTʰ; ND > NN; but also: ND > NT; NTʰ > NT; NN >
 ND.
 
+Consonant strength hierarchy (in some African languages, generalized):
+continuants, semivowels and ʔ > voiced stops > nasals > voiced and
+nasal geminates, voiceless stops > voiceless geminates > nasal
+clusters.
+
 Some suffixes may occur only in pausa, or are different there.
+
+Syllable weight: closed syllables may be heavy or light depending on
+the coda consonant, with sonorants more often making weight and stops
+not (in general CVV > CVC > CV).  Also, low vowels are generally
+heavier than high, and central vowels less heavy than non-central. You
+can get word-length dependent affix allomorphs of the same number of
+syllables, but with heavier vowels in one and lighter in the other.
+
+Consider palatalization, labialiazation, nasalization, etc., as
+phenomena which apply to a \textit{syllable} rather than a particular
+segment. This can generate substantially differing outcomes in
+historical processes (\textit{v.} Chadic family), especially as
+differing branches apply the effects more closely or more distantly. 
+% https://www.eva.mpg.de/lingua/conference/08_springschool/pdf/course_materials/Wolff_Historical_Phonology.pdf
+% "Issues in the historical phonology of Chadic languages"
 
 \subsection{ATR Harmony}
 Some systems are dominated by the feature of the word root, causing
 harmony both to the left and the right. Other systems are based on
 syllable position, \textit{e.g.,} a system where \I{-atr} vowels can
-follow, but not preced, \I{+atr} vowels. An originally larger vowel
+follow, but not precede, \I{+atr} vowels. An originally larger vowel
 inventory may reduce, giving a situation where one apparent vowel can
 trigger \I{+atr} in some words and \I{-atr} in others. Different
 morphological systems may take different rules within one language.
@@ -209,6 +230,40 @@ single term (``broom, flight of stairs,'' etc).
 Some affixes may simply require the root take \I{red}, with Makah
 having several types of \I{red} and affixes selecting one.
 
+
+\section{Word Classes}
+
+\begin{center}
+  \small
+  \begin{tabular}{|l|l|l|l|}
+    \hline
+    & \LL{Reference} & \LL{Modification} & \LL{Predication} \\
+    \hline
+\LL{Object} & referring, argument phrase (\LL{noun}) & nominal attributive phrase &
+                                                                   predicate
+                                                                   nominal \\
+    \hline
+\LL{Property} & deadjectival nominal & attributive phrase (\LL{adjective}) & predicate adjectival\\
+    \hline
+\LL{Action} & complement clause & relative clause & clause (\LL{verb})\\
+    \hline
+  \end{tabular}
+\end{center}
+% http://www.unm.edu/~wcroft/Papers/Morphosyntax-ch1-aug15.pdf
+
+\LL{Universal One}. A lexical class used in a nonprototypical
+propositional act function\footnote{Reference, modification or
+predication.} will be coded with at least as many morphemes as in
+its prototypical function, as in \textit{bright $>$ bright-\LL{ness}} (prototypical functions are marked in bold).
+
+\LL{Universal Two}. A lexical class used in a nonprototypical
+propositional act function will also have no more grammatical
+behavioral potential than in its prototypical function. For example, a
+predicate nominal will not have more inflectional possibilities than a
+full verb (in that particular language, of course).
+
+Individual languages will break up that 9x9 grid differently in terms
+of morphology, and where individual words end up.
 
 \section{The Noun}
 
@@ -299,6 +354,10 @@ size, and the semantics may be much less clear.  Demonstratives align
 with either pattern, from language to language.  Where the two systems
 have semantic overlap, the markers may be quite different, or cover
 different spaces.
+
+Hierarchy (tendency) for site of marking: pronouns > verbs >
+demonstratives > adjectives > numerals. Also possible: verbs >
+adjectives > pronouns.
 
 \subsubsection{Noun Classifiers}
 Similar to gender, and historically may lead to it, but classifiers
@@ -446,6 +505,11 @@ Question-based indefinites may be marked with some other morpheme,
 often related to words for ``be,'' ``want,'' ``perhaps,'' ``or'' or
 ``also.''
 
+\rara{Demonstrative agreement with addressee (in addition to usual),
+  with traces of such agreement for \I{adj}.}
+% https://orientalberber.wordpress.com/2012/05/29/siwi-addressee-agreement-and-addressing-aljazeera/
+
+
 
 \section{The Adjective}
 Comparatives neither rare nor universal.  Can be marked with (1) affix
@@ -457,6 +521,12 @@ Breaks along word class distinctions follow the adjective class: full
 (i.e., property-concept words go with verbs); \I{[na]v}; and \I{[nav]}
 (all three classes conflated).
 % http://www.ualberta.ca/~dbeck/StJuste.pdf
+
+Resultative adjectives are most likely in languages in which there are
+complex verbal predicates (serial verbs and particle verbs). ``I
+hammered it flat'' slots into complex verbal constructions naturally.
+French, for example, simply doesn't have these.
+% https://www.uni-salzburg.at/fileadmin/multimedia/Linguistik/documents/On_predicting_resultative_adjective_constructions-June-2016.pdf
 
 
 \section{The Verb}
@@ -493,6 +563,10 @@ suppletive).  In general, though, the basic role for animate verbs
 will be intransitive, with augmentation for the transitive form.  On
 the other hand, in the large, some few languages are fairly
 intransitive, some quite strongly transitive.
+
+Stative verbs often mark fewer tense or aspect distinctions (such as
+Eng.\ -ing, ``I am knowing''). Or, they may take some additional
+marking obligatorily (Turkish).
 
 Among other categories, some languages have verbs that mark ease or
 difficulty.  The marking for ``ease'' on a transitive verb may signal
@@ -609,6 +683,11 @@ cores are rarely the only one in any particular language.
 %http://www.ling.su.se/polopoly_fs/1.99116.1346331417!/menu/standard/file/Hallonsten_Halling_Pernilla.pdf
 
 
+\section{Indefinites}
+Indefinites off the the left of the Haspelmath map are more likely to
+be appreciative, and those to the right depreciative.
+% http://www.philol.msu.ru/~otipl/new/fdsl/abstracts/bylinina.pdf
+
 \section{Number}
 
 The distinction between ``paucal'' and ``plural'' is context
@@ -722,6 +801,10 @@ the like} knowledge $<$ utterance.
 
 
 \subsection{Negation}
+In negation, some verbs may take different object marking.
+
+Consider a separate prohibitive.
+
 Circumfix all over planet, just not common.
 
 Possible distinctions, beyond simple ``not:'' noun vs.\ non-noun, verb
@@ -789,6 +872,18 @@ an object and 4) a region detached from the object.  The landmark path
 (``extremity, peak'' $>$ ``head'') goes in reverse.
 % http://www.sciencedirect.com/science/article/pii/S0388000112000423
 
+Over time words move from external and objective to subjective and
+grammaticalized (``boor'' from farmer to oaf, ``feel'' from touch to
+experience emotion, ``insist'' from perservere to demand to believe
+strongly).
+% https://www.reddit.com/r/linguistics/comments/34r1vk/where_can_i_find_a_list_of_metaphors_that_have/
+
+Once a conceptual metaphor has taken root (\I{seeing} is
+\I{understanding}) vocabulary merely related to the concept of seeing
+may also be dragged into the metaphor later.  You don't expect
+``brilliant = intelligent'' to happen until the first metaphor is well
+established.
+% http://www.e-revistes.uji.es/index.php/clr/article/viewFile/1363/1206
 
 \section{καὶ τὰ λοιπά}
 
@@ -822,7 +917,6 @@ Straight-up aspect verbs (``begin'') can also use such a
 construction. ``Go'' and ``come'' with purpose may fall into this
 construction.  Also used for: causative (``make/cause and''),
 intention (``plan and''), reason, conditional.
-
 % http://publish.illinois.edu/djross3/files/2014/05/Ross2014_Lisbon.pdf
 
 \section{Sound Changes}
