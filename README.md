@@ -1,4 +1,4 @@
-# Glossopoetic Hypomnemata
+# Hypomnemata Glossopoetica
 
 This is a very terse collection of notes to myself about things I find
 useful to remember or think about when constructing a new language.
