@@ -13,7 +13,7 @@ time.
 
 You will need [The Brill](https://brill.com/page/BrillFont/brill-typeface)
 typeface (or change it to some other Unicode and IPA capable font in
-the LaTeX source).
+the LaTeX source, such as Libertinus).
 
 You will need XeTeX (part of LaTeX).
 
