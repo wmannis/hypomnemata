@@ -8,4 +8,4 @@ all: hypomnemata.pdf
 hypomnemata.pdf: hypomnemata.tex changes.tex lexfun.tex
 
 share:
-	cp hypomnemata.pdf ~/Dropbox/Goodreader/.
+	cp hypomnemata.pdf ~/Library/CloudStorage/Dropbox/Goodreader/.
