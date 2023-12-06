@@ -11,7 +11,7 @@ but some items from other sources have made their way into it over
 time.
 
 If you don't want to LaTeX it yourself: [Hypomnemata
-Glossopoetica](https://lingweenie.org/conlang/hypomnemata.pdf)
+Glossopoetica](https://lingweenie.org/conlang/hypomnemata.pdf).
 
 ## Building
 
