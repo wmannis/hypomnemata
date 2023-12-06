@@ -10,6 +10,9 @@ The section on sound changes is largely from the *Index Diachronica*,
 but some items from other sources have made their way into it over
 time.
 
+If you don't want to LaTeX it yourself: [Hypomnemata
+Glossopoetica](Hypomnemata Glossopoetica).
+
 ## Building
 
 You will need [The Brill](https://brill.com/page/BrillFont/brill-typeface)
