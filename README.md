@@ -10,7 +10,8 @@ The section on sound changes is largely from the *Index Diachronica*,
 but some items from other sources have made their way into it over
 time.
 
-If you don't want to LaTeX it yourself: [Hypomnemata Glossopoetica](Hypomnemata Glossopoetica).
+If you don't want to LaTeX it yourself: [Hypomnemata
+Glossopoetica](https://lingweenie.org/conlang/hypomnemata.pdf)
 
 ## Building
 
