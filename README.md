@@ -16,8 +16,8 @@ Glossopoetica](https://lingweenie.org/conlang/hypomnemata.pdf).
 ## Building
 
 You will need [The Brill](https://brill.com/page/BrillFont/brill-typeface)
-typeface (or change it to some other Unicode and IPA capable font in
-the LaTeX source, such as Libertinus).
+typeface (or change it to some other Unicode, IPA and small caps
+capable font in the LaTeX source, such as Libertinus).
 
 You will need XeTeX (part of LaTeX).
 
